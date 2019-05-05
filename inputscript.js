@@ -20,7 +20,7 @@ function populateButtons(searchArray,classToAdd,areaToAddTo){
 $(document).on('click', '.searchButton', function(){
     var type = $(this).data('type');
     console.log(heeeey)
-ver queryURL = 'http'
+ver queryURL = 'http://api.giphy.com/v1/gifs/search?q='+type+'&api_key=2Ec82SEPDRZ6PtMz76cK1kvGCccHc70L'
 $.ajax({erl:queryURL, method:'GET'})
 .done(function(response){
     console.log(heeelllloo)
